@@ -9,6 +9,8 @@ import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

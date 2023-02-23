@@ -38,43 +38,47 @@
                   </div>
             </div>
             <div class="col-6">
-                <form>
+                <form [formGroup]="formContacto" (ngSubmit)="agregarContacto()">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="text" formControlName="Nombres" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput">Nombres</label>
+                        <span *ngIf="formContacto.get('Nombres')?.hasError('required') && formContacto.get('Nombres')?.touched" class="text-danger fw-bold">El campo de los Nombres es obligatorio</span>
                       </div>
                       <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="text" formControlName="Apellidos" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput">Apellidos</label>
+                        <span *ngIf="formContacto.get('Apellidos')?.hasError('required') && formContacto.get('Apellidos')?.touched" class="text-danger fw-bold">El campo de los Apellidos es obligatorio</span>
                       </div>
                       <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <input type="email" formControlName="Correo" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Correo</label>
+                        <span *ngIf="formContacto.get('Correo')?.hasError('required') && formContacto.get('Correo')?.touched" class="text-danger fw-bold">El campo de el Correo es obligatorio</span>
                       </div>
                       <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <input type="text" formControlName="Telefono" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Telefono</label>
+                        <span *ngIf="formContacto.get('Telefono')?.hasError('required') && formContacto.get('Telefono')?.touched" class="text-danger fw-bold">El campo de el Telefono es obligatorio</span>
                       </div>
                       <div class="form-floating mb-3">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected>Seleccione uno...</option>
-                            <option value="1">Bogota</option>
-                            <option value="2">Cali</option>
-                            <option value="3">Medellin</option>
-                            <option value="4">Cartagena</option>
+                        <select class="form-select" id="floatingSelect" formControlName="Ciudad" aria-label="Floating label select example" >
+                            <option selected>Seleccione una Ciudad</option>
+                            <option value="Bogota">Bogota</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Medellin">Medellin</option>
+                            <option value="Cartagena">Cartagena</option>
                         </select>
                         <label for="floatingSelect">Ciudad</label>
+                        <span *ngIf="formContacto.get('Ciudad')?.hasError('required') && formContacto.get('Ciudad')?.touched" class="text-danger fw-bold">El campo de la Ciudad es obligatorio</span>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
+                        <textarea class="form-control" formControlName="Mensaje" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
                         <label for="floatingTextarea2">Dejanos tu mensaje</label>
+                        <span *ngIf="formContacto.get('Mensaje')?.hasError('required') && formContacto.get('Mensaje')?.touched" class="text-danger fw-bold">El campo de el Mensaje es obligatorio</span>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn text-white" [disabled]="formContacto.invalid">enviar</button>
                     </div>
                 </form>
-                <div class="d-flex justify-content-end">
-                    <button class="btn text-white">
-                        enviar
-                        </button>
-                </div>
             </div>
         </div>
     </div>
