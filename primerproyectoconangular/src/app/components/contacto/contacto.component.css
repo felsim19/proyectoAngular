@@ -1,0 +1,8 @@
+body{
+    background-image: url(../../../assets/img/Fondo-contacto1.jpg);
+    background-size: cover;
+}
+
+.bg-blur{
+    backdrop-filter: blur(25px);
+}
