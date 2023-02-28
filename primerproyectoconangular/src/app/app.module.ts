@@ -11,6 +11,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { HttpClientModule } from "@angular/common/http";
     ContactoComponent,
     NotFoundComponent,
     FooterComponent,
+    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule,
