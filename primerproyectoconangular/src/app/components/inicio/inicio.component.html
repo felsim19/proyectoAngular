@@ -1,8 +1,13 @@
-<div class="fondo">
-    <img src="../../../assets/img/15c7752c40.jfif" width="1348px" height="700px" class="position-fixed">
+<div class="fondo overflow-hidden">
+    <div class="d-flex justify-content-center align-items-center img-top">
+        <div class="position-absolute texto-img-top text-center blur-texto">
+            <h2 class="fw-bolder">¡Arriesgate a vivir nuevas experiencias!</h2>
+            <p class="fs-3 fw-light">Tenemos las mejores bicicletas para que vivas una vida llena de aventuras</p>
+        </div>
+    </div>
     <div>
         <!-- Carrusel -->
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade slider">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade slider mb-3" data-aos="zoom-out" data-aos-duration="500" data-aos-easing="ease-in-sine" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -24,12 +29,9 @@
             </div>
         </div>
         <!--FIN Carrusel -->
-        <div class="bg-black">
-            <h2 class="text-center text-white py-3 mb-5">Arriesgate a vivir una nueva aventura con nuestras bicicletas</h2>
-        </div>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 g-4 d-flex justify-content-center align-items-center">
-                <div class="col-4 d-flex justify-content-center align-items-center">
+                <div class="col-4 d-flex justify-content-center align-items-center" data-aos="fade-right">
                     <div class="card bg-transparent border-0 w-50 mb-1" routerLink="/catalogo">
                         <h5 class="card-title text-start ms-2 fw-bolder">BICICLETAS</h5>
                         <img src="assets/img/Sec-bicicletas.png" class="rounded img-fluid">
@@ -38,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex justify-content-center align-items-center">
+                <div class="col-4 d-flex justify-content-center align-items-center" data-aos="fade-left">
                     <div class="card bg-transparent border-0 w-50 mb-1" routerLink="/catalogo">
                         <h5 class="card-title text-start ms-2 fw-bolder">REPUESTOS</h5>
                         <img src="assets/img/Sec-repuestos.png" class="rounded img-fluid">
@@ -47,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex justify-content-center align-items-center">
+                <div class="col-4 d-flex justify-content-center align-items-center" data-aos="fade-right">
                     <div class="card bg-transparent border-0 w-50 mb-1" routerLink="/catalogo">
                         <h5 class="card-title text-start ms-2 fw-bolder">ACCESORIOS</h5>
                         <img src="assets/img/Sec-accesorios.png" class="rounded img-fluid">
@@ -56,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex justify-content-center align-items-center">
+                <div class="col-4 d-flex justify-content-center align-items-center" data-aos="fade-left">
                     <div class="card bg-transparent border-0 w-50 mb-1" routerLink="/catalogo">
                         <h5 class="card-title text-start ms-2 fw-bolder">PARA EL CICLISTA</h5>
                         <img src="assets/img/Sec-vestuario.png" class="rounded img-fluid">
@@ -69,3 +71,4 @@
         </div>
     </div>
 </div>
+<app-scroll-to-top></app-scroll-to-top>

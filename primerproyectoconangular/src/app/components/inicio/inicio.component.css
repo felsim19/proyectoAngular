@@ -1,7 +1,3 @@
-.grad {
-    backdrop-filter: blur(10px);
-}
-
 .slider::before, .slider::after {
     background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
@@ -16,4 +12,20 @@
     top: 0;
     -webkit-transform: rotateZ(180deg);
     transform: rotateZ(180deg);
+}
+
+.img-top{
+    background-image: url(../../../assets/img/Img-top.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 45em;
+}
+
+.blur-texto{
+    backdrop-filter: blur(10px);
+    border: 10px double #352318;
+    box-shadow: 25px #222222;
+    padding: 100px;
 }

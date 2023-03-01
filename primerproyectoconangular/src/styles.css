@@ -6,7 +6,6 @@
     --bg: #080312;
     --color: #afffff;
     color: var(--color);
-    /* use position: relative; so that BG is only for .btn */
     position: relative;
     isolation: isolate;
     display: inline-grid;
@@ -102,9 +101,9 @@
 }
 
 .btn:where(:hover, :focus) {
-    color: #fff;
+    color: #ffffff;
 }
 
 .fondo {
-    background: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0))
+    background: linear-gradient(#080312, rgb(255, 255, 255), #080312)
 }

@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
     NotFoundComponent,
     FooterComponent,
     ScrollToTopComponent,
+    SocialMediaComponent,
   ],
   imports: [
     BrowserModule,
