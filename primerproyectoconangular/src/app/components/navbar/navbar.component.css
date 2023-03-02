@@ -55,3 +55,7 @@ nav::after {
             var(--border-width) calc(100% - var(--border-width)));
     transition: clip-path 500ms;
 }
+.bg-select{
+    background: #080312;
+}
+

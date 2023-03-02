@@ -1,3 +1,8 @@
+@font-face {
+    font-family: BK;
+    src: url(assets/fonts/Staatliches-Regular.ttf);
+}
+
 .btn {
     --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
     --border-width: .125em;
@@ -104,6 +109,10 @@
     color: #ffffff;
 }
 
-.fondo {
-    background: linear-gradient(#080312, rgb(255, 255, 255), #080312)
+.fondo{
+    background: linear-gradient(#080312, rgb(255, 255, 255), #080312);
+}
+
+.fuente-general{
+font-family: BK;
 }

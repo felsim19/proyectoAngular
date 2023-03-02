@@ -4,5 +4,5 @@ body{
 }
 
 .bg-blur{
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(200px);
 }

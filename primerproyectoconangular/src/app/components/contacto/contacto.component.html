@@ -1,107 +1,132 @@
 <body>
     <div class="container py-5">
-        <h1 class="text-center text-light mb-5">contáctanos</h1>
+        <h1 class="text-center mb-5 fuente-general">contáctanos</h1>
         <div class="row">
             <div class="col-3">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button bg-dark collapsed text-white rounded" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                Horario de Atención al Cliente
+                                Horario de atención al cliente
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        <div id="flush-collapseOne" class="accordion-collapse collapse bg-dark"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body rounded">
                                 <ul>
-                                    <li>Lunes a viernes de 7:30 am. a 7:30 pm.</li>
-                                    <li>Sábados de 8:00 am. a 1:30 pm.</li>
+                                    <li class="text-white">Lunes a viernes de 7:30 am. a 7:30 pm.</li>
+                                    <li class="text-white">Sábados de 8:00 am. a 1:30 pm.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button bg-dark collapsed text-white rounded" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
                                 Contáctanos
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse bg-dark"
                             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body rounded">
                                 <ul>
-                                    <li class="my-2">Fijo Nacional<br>028000-191765</li>
-                                    <li class="my-2">Celular<br>(+57)-310-748-64-50</li>
+                                    <li class="my-2 text-white">Fijo Nacional<br>028000-191765</li>
+                                    <li class="my-2 text-white">Celular<br>(+57)-310-748-64-50<br>(+57)-311-455-68-64<br>(+57)-313-359-30-21</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- form contacto -->
             <div class="col-6 rounded py-3 bg-blur">
                 <form [formGroup]="formContacto" (ngSubmit)="agregarContacto()">
                     <div class="form-floating mb-3">
-                        <input type="text" formControlName="Nombres" class="form-control" id="floatingInput"
+                        <input type="text" formControlName="Nombres" class="form-control bg-dark" id="floatingInput"
                             placeholder="name@example.com">
-                        <label for="floatingInput">Nombres</label>
+                        <label class="text-white" for="floatingInput">Nombres</label>
                         <span
                             *ngIf="formContacto.get('Nombres')?.hasError('required') && formContacto.get('Nombres')?.touched"
                             class="text-danger fw-bold">El campo de los nombres es obligatorio</span>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" formControlName="Apellidos" class="form-control" id="floatingInput"
+                        <input type="text" formControlName="Apellidos" class="form-control bg-dark" id="floatingInput"
                             placeholder="name@example.com">
-                        <label for="floatingInput">Apellidos</label>
+                        <label class="text-white" for="floatingInput">Apellidos</label>
                         <span
                             *ngIf="formContacto.get('Apellidos')?.hasError('required') && formContacto.get('Apellidos')?.touched"
-                            class="text-danger fw-bold">El campo de los Apellidos es obligatorio</span>
+                            class="text-danger fw-bold">El campo de los apellidos es obligatorio</span>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" formControlName="Correo" class="form-control" id="floatingPassword"
+                        <input type="email" formControlName="Correo" class="form-control bg-dark" id="floatingPassword"
                             placeholder="Password">
-                        <label for="floatingPassword">Correo</label>
+                        <label class="text-white" for="floatingPassword">Correo</label>
                         <span
                             *ngIf="formContacto.get('Correo')?.hasError('required') && formContacto.get('Correo')?.touched"
-                            class="text-danger fw-bold">El campo de el Correo es obligatorio</span>
+                            class="text-danger fw-bold">El campo de el correo es obligatorio</span>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" formControlName="Telefono" class="form-control" id="floatingPassword"
+                        <input type="text" formControlName="Telefono" class="form-control bg-dark" id="floatingPassword"
                             placeholder="Password">
-                        <label for="floatingPassword">Telefono</label>
+                        <label class="text-white" for="floatingPassword">Télefono</label>
                         <span
                             *ngIf="formContacto.get('Telefono')?.hasError('required') && formContacto.get('Telefono')?.touched"
-                            class="text-danger fw-bold">El campo de el Telefono es obligatorio</span>
+                            class="text-danger fw-bold">El campo de el télefono es obligatorio</span>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="floatingSelect" formControlName="Ciudad"
+                        <select class="form-select bg-dark" id="floatingSelect" formControlName="Ciudad"
                             aria-label="Floating label select example">
-                            <option selected disabled>Seleccione una Ciudad</option>
-                            <option value="Bogota">Bogota</option>
-                            <option value="Cali">Cali</option>
-                            <option value="Medellin">Medellin</option>
-                            <option value="Cartagena">Cartagena</option>
+                            <option class="text-secondary" selected disabled>Seleccione una Ciudad</option>
+                            <option class="text-white" value="Bogota">Bogota</option>
+                            <option class="text-white" value="Cali">Cali</option>
+                            <option class="text-white" value="Medellin">Medellin</option>
+                            <option class="text-white" value="Cartagena">Cartagena</option>
                         </select>
-                        <label for="floatingSelect">Ciudad</label>
+                        <label class="text-white" for="floatingSelect">Ciudad</label>
                         <span
                             *ngIf="formContacto.get('Ciudad')?.hasError('required') && formContacto.get('Ciudad')?.touched"
-                            class="text-danger fw-bold">El campo de la Ciudad es obligatorio</span>
+                            class="text-danger fw-bold">El campo de la ciudad es obligatorio</span>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" formControlName="Mensaje" placeholder="Leave a comment here"
+                        <textarea class="form-control bg-dark" formControlName="Mensaje" placeholder="Leave a comment here"
                             id="floatingTextarea2" style="height: 120px"></textarea>
-                        <label for="floatingTextarea2">Dejanos tu mensaje</label>
+                        <label class="text-white" for="floatingTextarea2">Déjanos tu mensaje</label>
                         <span
                             *ngIf="formContacto.get('Mensaje')?.hasError('required') && formContacto.get('Mensaje')?.touched"
-                            class="text-danger fw-bold">El campo de el Mensaje es obligatorio</span>
+                            class="text-danger fw-bold">El campo de el mensaje es obligatorio</span>
                     </div>
                     <div class="d-flex justify-content-end">
                         <button type="submit" class="btn text-white" [disabled]="formContacto.invalid">enviar</button>
                     </div>
                 </form>
+            </div>
+            <div class="col-3">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-center" id="flush-headingOne">
+                            <button class="accordion-button bg-dark collapsed text-white rounded" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTeam" aria-expanded="false"
+                                aria-controls="flush-collapseTeam">
+                                Nuestro equipo
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTeam" class="accordion-collapse collapse bg-dark"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body d-flex flex-column justify-content-center align-items-center">
+                                <img src="../../../assets/img/user.png" class="rounded-circle mt-2" width="115px">
+                                <h6 class="text-white">Julián </h6>
+                                <img src="../../../assets/img/user.png" class="rounded-circle mt-2" width="115px">
+                                <h6 class="text-white">Fabian</h6>
+                                <img src="../../../assets/img/WhatsApp Image 2023-03-02 at 11.56.19 AM.jpeg" class="rounded-circle mt-2" width="115px">
+                                <h6 class="text-white">Juan</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
