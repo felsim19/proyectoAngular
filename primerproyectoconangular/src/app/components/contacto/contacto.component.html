@@ -2,7 +2,7 @@
     <div class="container py-5">
         <h1 class="text-center mb-5 fuente-general">contáctanos</h1>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3 mt-3">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
@@ -16,7 +16,7 @@
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body rounded">
                                 <ul>
-                                    <li class="text-white">Lunes a viernes de 7:30 am. a 7:30 pm.</li>
+                                    <li class="text-white">Lunes a viernes de 7:00 am. a 5:00 pm.</li>
                                     <li class="text-white">Sábados de 8:00 am. a 1:30 pm.</li>
                                 </ul>
                             </div>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <!-- form contacto -->
-            <div class="col-6 rounded py-3 bg-blur">
+            <div class="col-md-6 rounded py-3 bg-blur">
                 <form [formGroup]="formContacto" (ngSubmit)="agregarContacto()">
                     <div class="form-floating mb-3">
                         <input type="text" formControlName="Nombres" class="form-control bg-dark" id="floatingInput"
@@ -104,7 +104,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 mt-3">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header text-center" id="flush-headingOne">
@@ -118,11 +118,11 @@
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body d-flex flex-column justify-content-center align-items-center">
                                 <img src="../../../assets/img/user.png" class="rounded-circle mt-2" width="115px">
-                                <h6 class="text-white">Julián </h6>
+                                <h6 class="text-white">Julián Sierra</h6>
                                 <img src="../../../assets/img/user.png" class="rounded-circle mt-2" width="115px">
-                                <h6 class="text-white">Fabian</h6>
+                                <h6 class="text-white">Fabian Cardenas</h6>
                                 <img src="../../../assets/img/WhatsApp Image 2023-03-02 at 11.56.19 AM.jpeg" class="rounded-circle mt-2" width="115px">
-                                <h6 class="text-white">Juan</h6>
+                                <h6 class="text-white">Juan Rodríguez</h6>
                             </div>
                         </div>
                     </div>
