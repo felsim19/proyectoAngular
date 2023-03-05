@@ -53,12 +53,14 @@
                         <input type="email" formControlName="Correo" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Correo</label>
                         <span *ngIf="formContacto.get('Correo')?.hasError('required') && formContacto.get('Correo')?.touched" class="text-danger fw-bold">El campo de el Correo es obligatorio</span>
+                        <span *ngIf="formContacto.get('Correo')?.hasError('pattern') && formContacto.get('Correo')?.touched" class="text-danger fw-bold">El campo de el Correo es invalido</span>
                       </div>
                       <div class="form-floating mb-3">
                         <input type="text" formControlName="Telefono" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Telefono</label>
                         <span *ngIf="formContacto.get('Telefono')?.hasError('required') && formContacto.get('Telefono')?.touched" class="text-danger fw-bold">El campo de el Telefono es obligatorio</span>
-                      </div>
+                        <span *ngIf="formContacto.get('Telefono')?.hasError('pattern') && formContacto.get('Telefono')?.touched" class="text-danger fw-bold">El campo de el Telefono es invalido</span>
+                    </div>
                       <div class="form-floating mb-3">
                         <select class="form-select" id="floatingSelect" formControlName="Ciudad" aria-label="Floating label select example" >
                             <option selected>Seleccione una Ciudad</option>

@@ -11,6 +11,12 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
+import { ListarContactoComponent } from './components/admin/listar-contacto/listar-contacto.component';
+import { MenuLateralComponent } from './components/admin/menu-lateral/menu-lateral.component';
+import { AdminUsersComponent } from './components/admin/admin-users/admin-users.component';
+import { CrearProductoComponent } from './components/admin/crear-producto/crear-producto.component';
+import { ListarProductosComponent } from './components/admin/listar-productos/listar-productos.component';
+import { EditarContactoComponent } from './components/admin/editar-contacto/editar-contacto.component';
 
 
 @NgModule({
@@ -22,6 +28,12 @@ import { HttpClientModule } from "@angular/common/http";
     ContactoComponent,
     NotFoundComponent,
     FooterComponent,
+    ListarContactoComponent,
+    MenuLateralComponent,
+    AdminUsersComponent,
+    CrearProductoComponent,
+    ListarProductosComponent,
+    EditarContactoComponent,
   ],
   imports: [
     BrowserModule,
