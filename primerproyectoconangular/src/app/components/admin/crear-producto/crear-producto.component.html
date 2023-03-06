@@ -1,0 +1,36 @@
+<app-menu-lateral></app-menu-lateral>
+
+<section class="container">
+    <h1 class="text-center my-5">{{TituloComponents}} Productos</h1>
+    <div class="d-flex justify-content-end mb-3">
+        <button class="btn text-white mt-3" routerLink="/listar-producto"><b>Regresar a lista productos</b></button>
+    </div>
+    <form [formGroup]="FormProducto" (ngSubmit)="agregarProducto()">
+        <div class="form-floating mb-3">
+            <input type="text" formControlName="Nombre" class="form-control" id="Nombre">
+            <label for="Nombre">Nombre</label>
+            <span *ngIf="FormProducto.get('Nombre')?.hasError('required') && FormProducto.get('Nombre')?.touched" class="text-danger fw-bold">Digite el nombre del producto</span>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" formControlName="Descripcion" class="form-control" id="Descripcion" >
+            <label for="Descripcion">Descripcion</label>
+            <span *ngIf="FormProducto.get('Descripcion')?.hasError('required') && FormProducto.get('Descripcion')?.touched" class="text-danger fw-bold">Digite la Descripcion</span>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" formControlName="RutaImg" class="form-control" id="RutaImg">
+            <label for="RutaImg">Ruta de imagen</label>
+            <span *ngIf="FormProducto.get('RutaImg')?.hasError('required') && FormProducto.get('RutaImg')?.touched" class="text-danger fw-bold">Digite la ruta de la imagen</span>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" formControlName="Precio" class="form-control" id="Precio">
+            <label for="Precio">Precio</label>
+            <span *ngIf="FormProducto.get('Precio')?.hasError('required') && FormProducto.get('Precio')?.touched" class="text-danger fw-bold">Digite el Precio</span>
+            <span *ngIf="FormProducto.get('Precio')?.hasError('pattern') && FormProducto.get('Precio')?.touched" class="text-danger fw-bold">El Precio solo puede tener numeros</span>
+          </div>
+          <div class="d-flex justify-content-center align-items- mb-4">
+            <button type="submit" class="btn text-white" [disabled]="FormProducto.invalid">
+                Enviar
+              </button>
+          </div>
+    </form>
+</section>

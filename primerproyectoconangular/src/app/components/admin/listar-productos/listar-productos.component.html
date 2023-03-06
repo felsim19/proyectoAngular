@@ -1,0 +1,40 @@
+<app-menu-lateral></app-menu-lateral>
+
+<div>
+    <div class="container d-flex justify-content-center py-4">
+        <p class="h1">Lista Productos</p>
+        <button class="btn ms-auto text-white" routerLink="/Crear-producto"><b>Crear Producto</b></button>
+    </div>
+    <div class="py-5">
+        <table *ngIf="listProducto.length > 0" class="container table">
+            <thead>
+                <tr>
+                    <th scope="col-2">Ruta imagen</th>
+                    <th scope="col-2">Nombre</th>
+                    <th scope="col-2">Descripcion</th>
+                    <th scope="col-2">Precio</th>
+                    <th scope="col-2">Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let ProductosService of listProducto">
+                    <td width="20%">
+                        <img src="{{ProductosService.RutaImg}}" class="crear_imgadmin" alt="">
+                    </td>
+                    <td>{{ProductosService.Nombre}}</td>
+                    <td>{{ProductosService.Descripcion}}</td>
+                    <td>{{ProductosService.Precio | currency: '$ '}}</td>
+                    <td>
+                        <button class="btn text-white" [routerLink]="['/Editar-producto', ProductosService._id]">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn ms-4 text-white" (click)="eliminarProducto(ProductosService._id)">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="text-center text-danger fw-bold" *ngIf="listProducto.length == 0">No hay productos registrados</h2>
+    </div>
+</div>
