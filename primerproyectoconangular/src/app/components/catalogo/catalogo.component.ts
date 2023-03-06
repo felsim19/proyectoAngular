@@ -3,9 +3,9 @@ import { ProductosService } from "src/app/services/productos.service";
 import { modelCrearProducto } from "src/app/models/modelCrearProducto";
 
 @Component({
-  selector: 'app-catalogo',
-  templateUrl: './catalogo.component.html',
-  styleUrls: ['./catalogo.component.css']
+    selector: 'app-catalogo',
+    templateUrl: './catalogo.component.html',
+    styleUrls: ['./catalogo.component.css']
 })
 export class CatalogoComponent implements OnInit{
 

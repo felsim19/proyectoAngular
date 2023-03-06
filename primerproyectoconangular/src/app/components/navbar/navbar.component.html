@@ -1,21 +1,33 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand text-light" href="#">Carros S.A.S</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item text-light">
-            <a class="nav-link active text-light" aria-current="page" routerLink="/">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" routerLink="/catalogo">Producto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" routerLink="/contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand fw-bolder fuente-general" routerLink="/"><img src="../../../assets/img/Logo-blanco.png" class="me-3"
+                width="70px" height="50px">COLBIKES</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active mx-3" aria-current="page" routerLink="/"><i
+                            class="fa-solid fa-house me-2"></i>Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active mx-3 dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-bicycle me-2"></i>Productos
+                    </a>
+                    <ul class="dropdown-menu bg-select">
+                        <li><a class="dropdown-item text-white" routerLink="/catalogo">Bicicletas</a></li>
+                        <li><a class="dropdown-item text-white" routerLink="/catalogo">Repuestos</a></li>
+                        <li><a class="dropdown-item text-white" routerLink="/catalogo">Accesorios</a></li>
+                        <li><a class="dropdown-item text-white" routerLink="/catalogo">Para el ciclista</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active mx-3" routerLink="/contacto"><i class="fa-solid fa-address-book me-2"></i>Contacto</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>

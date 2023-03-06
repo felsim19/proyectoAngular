@@ -1,20 +1,170 @@
 <div class="fondo">
     <div class="container text-center text-light mb-4">
-        <h1>Nuestros productos</h1>
+        <h1 class="pt-3 fuente-general">Nuestros productos</h1>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col" *ngFor="let productos of listProducto">
-          <div class="card ms-4 me-4 mb-5">
-            <img src="{{ productos.RutaImg}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{ productos.Nombre}}</h5>
-              <p class="card-text">{{ productos.Descripcion}}</p>
-              <p class="card-text">{{ productos.Precio}}</p>
-              <div class="d-flex justify-content-end">
-                <button class="btn text-white">Ver mas</button>
-              </div>
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center row">
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla1.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">Bicicleta KTM ULTRA SPORT 2021</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Montaña </small></p>
+                            <br>
+                            <p class="card-text"><b>$4,771,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla2.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">Bicicleta Cannondale CAAD Optimo 3</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Ruta </small></p>
+                            <br>
+                            <p class="card-text"><b>$4,690,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla3.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">BICICLETA GT SENSOR ELITE 29″ 2021</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Montaña </small></p>
+                            <br>
+                            <p class="card-text"><b>$12,350,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla4.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">BICICLETA GT FORCE ELITE 29″ 2021 AZUL</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Montaña </small></p>
+                            <br>
+                            <p class="card-text"><b>$11,908,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla5.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">Bicicleta Cannondale CAAD 13 Disc 105</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Ruta </small></p>
+                            <br>
+                            <p class="card-text"><b>$8,890,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla6.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">Bicicleta Cannondale Scalpel 3 Crb</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Montaña </small></p>
+                            <br>
+                            <p class="card-text"><b>$19,440,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla7.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">Bicicleta De Ruta Teammachine SLR Four - BMC</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Ruta </small></p>
+                            <br>
+                            <p class="card-text"><b>$18,100,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla8.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">Bicicleta GT Avalanche Elite 29 2022</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Montaña </small></p>
+                            <br>
+                            <p class="card-text"><b>$3,330,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla9.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">Bicicleta Gt Avalanche Expert 29 2022</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Montaña </small></p>
+                            <br>
+                            <p class="card-text"><b>$4,810,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/img/cicla10.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-general">Bicicleta KTM REVELATOR LISSE PRESTIGE</h5>
+                            <p class="card-text"><small class="text-muted">Bicicletas, Montaña </small></p>
+                            <br>
+                            <p class="card-text"><b>$32,444,000</b></p>
+                            <button class="btn text-white">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 </div>
+<app-scroll-to-top></app-scroll-to-top>
