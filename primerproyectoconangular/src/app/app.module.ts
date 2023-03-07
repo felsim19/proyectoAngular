@@ -14,6 +14,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { ProductoComponent } from './components/producto/producto.component';
+import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ProductoComponent } from './components/producto/producto.component';
     ScrollToTopComponent,
     SocialMediaComponent,
     ProductoComponent,
+    WhatsappComponent,
   ],
   imports: [
     BrowserModule,
