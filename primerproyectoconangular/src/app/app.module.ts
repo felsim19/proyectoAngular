@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { ProductoComponent } from './components/producto/producto.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { SocialMediaComponent } from './components/social-media/social-media.com
     FooterComponent,
     ScrollToTopComponent,
     SocialMediaComponent,
+    ProductoComponent,
   ],
   imports: [
     BrowserModule,
