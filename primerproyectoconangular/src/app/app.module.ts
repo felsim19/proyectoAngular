@@ -19,6 +19,10 @@ import { AdminUsersComponent } from './components/admin/admin-users/admin-users.
 import { CrearProductoComponent } from './components/admin/crear-producto/crear-producto.component';
 import { ListarProductosComponent } from './components/admin/listar-productos/listar-productos.component';
 import { EditarContactoComponent } from './components/admin/editar-contacto/editar-contacto.component';
+import { RepuestosComponent } from './components/repuestos/repuestos.component';
+import { AccesoriosComponent } from './components/accesorios/accesorios.component';
+import { CiclistaComponent } from './components/ciclista/ciclista.component';
+
 
 
 
@@ -41,6 +45,9 @@ import { EditarContactoComponent } from './components/admin/editar-contacto/edit
     CrearProductoComponent,
     ListarProductosComponent,
     EditarContactoComponent,
+    RepuestosComponent,
+    AccesoriosComponent,
+    CiclistaComponent,
 
   ],
   imports: [

@@ -9,10 +9,17 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { CrearProductoComponent } from './components/admin/crear-producto/crear-producto.component';
 import { ListarProductosComponent } from './components/admin/listar-productos/listar-productos.component';
 import { EditarContactoComponent } from './components/admin/editar-contacto/editar-contacto.component';
+import { RepuestosComponent } from './components/repuestos/repuestos.component';
+import { AccesoriosComponent } from './components/accesorios/accesorios.component';
+import { CiclistaComponent } from './components/ciclista/ciclista.component';
+
 
 const routes: Routes = [
     {path: "", component:InicioComponent},
     {path: "catalogo", component:CatalogoComponent},
+    {path: "repuestos", component:RepuestosComponent},
+    {path: "accesorios", component:AccesoriosComponent},
+    {path: "ciclista", component:CiclistaComponent},
     {path: "contacto", component:ContactoComponent},
     {path: "Admin-page", component:AdminUsersComponent},
     {path: "listar-contacto", component:ListarContactoComponent},

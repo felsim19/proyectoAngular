@@ -3,22 +3,22 @@ import { ProductosService } from "src/app/services/productos.service";
 import { modelCrearProducto } from "src/app/models/modelCrearProducto";
 
 @Component({
-    selector: 'app-catalogo',
-    templateUrl: './catalogo.component.html',
-    styleUrls: ['./catalogo.component.css']
+  selector: 'app-repuestos',
+  templateUrl: './repuestos.component.html',
+  styleUrls: ['./repuestos.component.css']
 })
-export class CatalogoComponent implements OnInit{
+export class RepuestosComponent implements OnInit{
 
     listProducto: modelCrearProducto [] = []
 
     constructor(private _ProductosService : ProductosService){}
 
     ngOnInit(): void {
-        this.obtenerBicicletas()
+        this.obtenerRepuestos()
     }
 
-    obtenerBicicletas() {
-        this._ProductosService.getBicicletas().subscribe(data => {
+    obtenerRepuestos() {
+        this._ProductosService.getRepuestos().subscribe(data => {
             console.log(data)
             this.listProducto = data
         }, error =>{

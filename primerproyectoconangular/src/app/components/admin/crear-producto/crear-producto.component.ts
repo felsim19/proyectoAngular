@@ -22,7 +22,8 @@ export class CrearProductoComponent implements OnInit {
             Nombre:["", Validators.required],
             Descripcion:["", Validators.required],
             RutaImg:["", Validators.required],
-            Precio:["", [Validators.required, Validators.pattern(this.regexTelefono)]]
+            Precio:["", [Validators.required, Validators.pattern(this.regexTelefono)]],
+            Categoria:["", Validators.required]
         })
         this.id = this.idRouter.snapshot.paramMap.get('id')
     }
@@ -63,7 +64,8 @@ export class CrearProductoComponent implements OnInit {
                     Nombre : data.Nombre,
                     Descripcion : data.Descripcion,
                     RutaImg : data.RutaImg,
-                    Precio : data.Precio
+                    Precio : data.Precio,
+                    Categoria : data.Categoria
                 })
             )
         }
