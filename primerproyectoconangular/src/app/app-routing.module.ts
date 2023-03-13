@@ -6,12 +6,14 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ListarContactoComponent } from './components/admin/listar-contacto/listar-contacto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ProductoComponent } from './components/producto/producto.component';
 import { CrearProductoComponent } from './components/admin/crear-producto/crear-producto.component';
 import { ListarProductosComponent } from './components/admin/listar-productos/listar-productos.component';
 import { EditarContactoComponent } from './components/admin/editar-contacto/editar-contacto.component';
 import { RepuestosComponent } from './components/repuestos/repuestos.component';
 import { AccesoriosComponent } from './components/accesorios/accesorios.component';
 import { CiclistaComponent } from './components/ciclista/ciclista.component';
+
 
 
 const routes: Routes = [
@@ -29,6 +31,7 @@ const routes: Routes = [
     {path: "Editar-producto/:id", component:CrearProductoComponent} ,
     {path: "listar-producto", component:ListarProductosComponent},
     {path: "404", component:NotFoundComponent},
+    {path: "producto", component:ProductoComponent},
     {path: "**", redirectTo: '404', pathMatch: 'full'}
 ];
 

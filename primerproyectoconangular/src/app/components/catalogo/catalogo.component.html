@@ -4,7 +4,7 @@
     </div>
     <div class="container">
         <div class="d-flex justify-content-center align-items-center row">
-            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;" *ngFor="let productos of listProducto">
+            <div class="card mb-3 col-5 zoom m-2 w-100" style="max-width: 540px;" *ngFor="let productos of listProducto" routerLink="/producto">
                 <div class="row g-0">
                     <div class="col-md-6">
                         <img src="{{productos.RutaImg}}" class="img-fluid rounded-start">
