@@ -1,0 +1,38 @@
+<app-menu-lateral></app-menu-lateral>
+
+<div>
+    <div class="container d-flex justify-content-center py-4">
+        <p class="h1">Lista Contactos</p>
+        <button class="btn ms-auto text-white" routerLink="/contacto" ><b>Crear Contacto</b></button>
+    </div>
+    <div class="py-5">
+        <table *ngIf="listContacto.length > 0" class="container table">
+            <thead>
+                <tr>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let ContactoService of listContacto">
+                    <td>{{ContactoService.Nombres}}</td>
+                    <td>{{ContactoService.Apellidos}}</td>
+                    <td>{{ContactoService.Correo}}</td>
+                    <td>{{ContactoService.Telefono}}</td>
+                    <td>
+                        <button class="btn text-white">
+                            <i class="fa-solid fa-pen-to-square" [routerLink]="['/Editar-contactos', ContactoService._id]"></i>
+                        </button>
+                        <button class="btn ms-4 text-white" (click)="eliminarContacto(ContactoService._id)">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="text-center text-danger fw-bold" *ngIf="listContacto.length == 0">No hay contactos registrados</h2>
+    </div>
+</div>

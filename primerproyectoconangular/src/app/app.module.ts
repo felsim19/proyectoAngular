@@ -15,6 +15,17 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
+import { ListarContactoComponent } from './components/admin/listar-contacto/listar-contacto.component';
+import { MenuLateralComponent } from './components/admin/menu-lateral/menu-lateral.component';
+import { AdminUsersComponent } from './components/admin/admin-users/admin-users.component';
+import { CrearProductoComponent } from './components/admin/crear-producto/crear-producto.component';
+import { ListarProductosComponent } from './components/admin/listar-productos/listar-productos.component';
+import { EditarContactoComponent } from './components/admin/editar-contacto/editar-contacto.component';
+import { RepuestosComponent } from './components/repuestos/repuestos.component';
+import { AccesoriosComponent } from './components/accesorios/accesorios.component';
+import { CiclistaComponent } from './components/ciclista/ciclista.component';
+
+
 
 
 @NgModule({
@@ -30,6 +41,16 @@ import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
     SocialMediaComponent,
     ProductoComponent,
     WhatsappComponent,
+    ListarContactoComponent,
+    MenuLateralComponent,
+    AdminUsersComponent,
+    CrearProductoComponent,
+    ListarProductosComponent,
+    EditarContactoComponent,
+    RepuestosComponent,
+    AccesoriosComponent,
+    CiclistaComponent,
+
   ],
   imports: [
     BrowserModule,

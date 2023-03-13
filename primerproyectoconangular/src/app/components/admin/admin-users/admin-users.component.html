@@ -1,0 +1,40 @@
+
+<app-menu-lateral></app-menu-lateral>
+<div class="container py-5 pb-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="../../../../assets/img/img-admin1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Area de Productos</h5>
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Opciones
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button" routerLink="/Crear-producto">Crear Producto</button></li>
+                  <li><button class="dropdown-item" type="button" routerLink="/listar-producto">Lista Producto</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" routerLink="/listar-contacto">
+          <div class="card">
+            <img src="../../../../assets/img/img-admin2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Solicitudes De Contactos</h5>
+              <button class="btn text-white" routerLink="/listar-contacto">Ver lista</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../../../../assets/img/img-admin3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Usuarios</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
